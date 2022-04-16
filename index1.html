@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Library Management System
+    </title>
+</head>
+<script type="text/javascript">
+</script>
+
+<body bgcolor="CEAB93">
+    <h1 align="center" id="log"></br></br></br></br></br></br>
+        Library Management System
+    </h1>
+    <center></br></br>
+        <form name="login">
+            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email" /></br></br>
+            Password&nbsp;&nbsp;<input type="password" name="pswrd" /></br></br></br>
+            <input type="button" onclick="check(this.form)" value="Login" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Cancel" />
+        </form>
+    </center>
+    <script language="javascript">
+        function check(form)/*function to check userid & password*/ {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.email.value == "praveen214@gmail.com" && form.pswrd.value == "123") {
+                window.open('index.html')/*opens the target page while Id & password matches*/
+            }
+            else {
+                alert("Incorrect Password or Email")/*displays error message*/
+            }
+        }
+    </script>
+</body>
+
+</html>
